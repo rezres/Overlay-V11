@@ -9,7 +9,7 @@ export class MyOverlayService extends OverlayContainer implements OnDestroy {
     if (!this._containerElement) {
       return;
     }
-    const parent = document.querySelector('axc-ppms-pages') || document.body;
+    const parent = document.querySelector('.my-selector') || document.body;
     parent.appendChild(this._containerElement);
   }
 
